@@ -14,9 +14,9 @@ export class AppService {
   }
 
   getLoop() : string {
-    for(let i = 0; i < 90000000; i++){
+    for(let i = 0; i < 10000000000; i++){
       this.count+=i;
     }
-    return "Incrémentation bien effectuée";
+    return "Incrémentation bien effectuée : "+this.count;
   }
 }
